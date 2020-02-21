@@ -168,19 +168,47 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.bignav {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px dashed #C0C0C0;
+}
 nav {
   display: flex;
   justify-content: space-between;
 }
-nav a:link,
-nav a:visited,
-nav a {
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+}
+a:link,
+a:visited,
+a {
   text-decoration: none;
   color: black;
-  font-size: 3rem;
+  font-size: 2rem;
+  vertical-align: center;
+  padding: 10px 0;
 }
-nav h1 {
+@media (max-width: 500px) {
+  a:link,
+  a:visited,
+  a {
+    font-size: 2rem;
+    text-align: justify;
+    padding: auto;
+  }
+}
+h1 {
   padding: 0 20% 0 0;
+}
+@media (max-width: 500px) {
+  h1 {
+    text-align: center;
+    margin: auto;
+    padding: 0;
+  }
 }
 .footer {
   width: 100%;
