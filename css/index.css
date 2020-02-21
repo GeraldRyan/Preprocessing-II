@@ -176,7 +176,7 @@ img {
 }
 .bigcontainer {
   border-bottom: 2px dashed #C0C0C0;
-  padding: 0 0 15px 0;
+  padding: 20px 0;
 }
 .nav {
   display: flex;
@@ -193,7 +193,7 @@ img {
 }
 @media (min-width: 500px) {
   .nav .breaker {
-    display: none;
+    width: 20%;
   }
 }
 @media (max-width: 500px) {
@@ -206,8 +206,8 @@ img {
 .nav a {
   text-decoration: none;
   color: black;
-  font-size: 2rem;
-  padding: 10px 0;
+  font-size: 1.8rem;
+  padding: 12px 0 0 0;
 }
 @media (max-width: 500px) {
   .nav a:link,
